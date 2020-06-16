@@ -33,11 +33,11 @@ jobs:
       with:
         cmd: install  
       
-   - name: Creating Build
-     run: yarn build 
+    - name: Creating Build
+      run: yarn build 
      
-   - name: Installing Surge
-     run: npm install -g surge 
+    - name: Installing Surge
+      run: npm install -g surge 
    
-   - name: Deploying on surge
-     run: surge ./build http://alvis-app.surge.sh/ --token ${{secrets.App_Token}} 
+    - name: Deploying on surge
+      run: surge ./build http://alvis-app.surge.sh/ --token ${{secrets.App_Token}} 
