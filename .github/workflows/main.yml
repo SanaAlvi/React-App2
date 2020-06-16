@@ -41,3 +41,5 @@ jobs:
    
     - name: Deploying on surge
       run: surge ./build http://alvis-app.surge.sh/ --token ${{secrets.App_Token}} 
+
+
