@@ -4,7 +4,7 @@ import CounterReducer from './CounterReducer';
 const Child2 = () => {
     let [sana, dispatch] = useReducer(CounterReducer,24);
     return(
-        <div>
+        <div className="App">
             <h2>This is Child2 made for learning Reducer</h2>
             <h3>Value of Reducer: {sana}</h3>
             <button onClick={() =>dispatch("INCREMENT") }>
