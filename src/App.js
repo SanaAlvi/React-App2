@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './App.css';
 import Parent from './Parent';
 import CounterContext from './ConterContext';
 
 function App() {
+  //let [count,setCount] =useState(25) # normally it is so   
+  //This means countState is an array and give count variable in value={count}
+
+  let countState = useState(1)
+
   return (
-    <CounterContext.Provider value={24}>
+    <CounterContext.Provider value={countState}> 
     <div className="App">
       <Parent />
     </div>
