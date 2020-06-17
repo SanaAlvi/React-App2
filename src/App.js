@@ -13,6 +13,7 @@ function App() {
   return (
     <CounterContext.Provider value={countState}> 
     <div className="App">
+      <h2>This is main App using CounterContext.Provider </h2>
       <Parent />
     </div>
     </CounterContext.Provider>
