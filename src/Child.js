@@ -13,8 +13,8 @@ import CounterContext from './ConterContext';
 const Child = () => {
     let counterValue = useContext (CounterContext)
     return(
-        <div className="App-header">
-            <h1>This is first Child </h1>
+        <div className="App">
+            <h1>This is first Child for learning context </h1>
             <h2> Counter Value is {counterValue[0]} </h2> 
             <button onClick={() => {counterValue[1](++counterValue[0])}}>Increment</button>         
         </div>
