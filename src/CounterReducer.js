@@ -4,3 +4,4 @@ const CounterReducer = (state, action) => {
         return state + 1
     }
   }
+  export default CounterReducer;
