@@ -8,7 +8,7 @@ const Parent = () => {
     return(
         <div className="App-header">
             <h1>Hello from Parent:{CountState[0]}</h1>
-            <button onClick={() => {CountState[1][2]}}>
+            <button onClick={() => {CountState[1](2)}}>
                 Change it
             </button>
            <Child />
