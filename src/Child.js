@@ -16,7 +16,7 @@ const Child = () => {
         <div className="App-header">
             <h1>This is first Child </h1>
             <h2> Counter Value is {counterValue[0]} </h2> 
-            <button onClick={() => {counterValue[1](counterValue[0]++)}}>Increment</button>         
+            <button onClick={() => {counterValue[1](++counterValue[0])}}>Increment</button>         
         </div>
     )
 }
